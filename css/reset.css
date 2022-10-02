@@ -25,6 +25,8 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
+	height: 10000vh;
+	
 }
 ol, ul {
 	list-style: none;
@@ -42,4 +44,9 @@ table {
 	border-spacing: 0;
 }
 
+
+a {
+	color: inherit;
+	text-decoration: none;
+}
 
