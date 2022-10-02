@@ -1,0 +1,26 @@
+.user-chats{
+    padding: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+ 
+}
+
+.user-chats__time{
+    opacity: 0.5;
+}
+
+.user-chats__alarm{
+    display: flex;
+    margin-top: 10px;
+    margin-left: 16px;
+    background-color: rgb(199, 20, 20);
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    
+}
+
