@@ -1,0 +1,313 @@
+#chatting-screen{
+    background-color: rgb(81, 122, 146);
+}
+
+
+.chatting-room{
+    display: flex;
+   justify-content: space-between;
+   align-items: center;
+   position: fixed;
+   width: 100%;
+   box-sizing: border-box;
+ padding-right: 25px;
+ padding-left: 25px;
+ padding-top: 75px;
+   }
+
+
+   .chatting-room__title{
+    display: flex;
+    align-items: center;
+
+    
+    }
+
+    .chatting-room__title .chatting-room__name{
+        font-size: 20px;
+    margin-left: 30px;
+    
+    }
+   
+.chatting-room__name h4{
+font-weight: 600;
+}
+
+.chatting-room__name h5{
+    font-size: 15px;
+    margin-top: 3px;
+}
+
+.chatting-room__title span:first-child{
+    margin-right: 15px;
+}
+
+.chatting-status{
+    background-color:rgb(81, 122, 146) ;
+    z-index: 2;
+}
+
+.chatting-room{
+    background-color: rgb(81, 122, 146);
+    z-index: 1;
+}
+
+
+.chatting-date{
+    display: flex;
+    justify-content: center;
+    padding-top: 160px;
+    
+}
+
+.chatting-date__title span{
+    background-color: rgba(0,0,0,0.3);
+  padding: 5px 10px;
+  border-radius: 15px;
+  color: white;
+}
+
+
+.chatting-content{
+   display:flex;
+    margin-top: 20px;
+    padding-left: 25px;
+}
+
+.chatting-content img{
+    width: 70px;
+    height: 70px;
+    border-radius: 20px;
+}
+
+
+.chatting-content__colmun{
+    margin-left: 10px;
+    margin-top: 5px;
+}
+
+.chatting-content__name{
+    font-size: 20px;
+}
+
+.chatting-content__colmun div:nth-child(2){
+margin-top: 22px;
+}
+
+.chatting-content__colmun div:nth-child(3){
+    margin: 25px 0px;
+}
+
+.content1{
+    background-color: white;
+    padding: 6px 8px;
+    border-radius: 15px;
+    border-top-left-radius: 0;
+}
+
+.content2{
+    background-color: white;
+    padding: 6px 8px;
+    border-radius: 15px;
+    
+}
+
+.content3{
+    background-color: aliceblue;
+    padding: 8px 8px;
+    border-radius: 15px;
+}
+
+.chatting-content__colmun div:last-child{
+   display: flex;
+  align-items: flex-end;
+  margin-top: -6px;
+  
+}
+
+.content4{
+    font-size: 12px;
+    opacity: 0.8;
+    margin-left: 3px;
+}
+
+.chatting-answer{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+    
+}
+
+.chatting-answer__me{
+    display: flex;
+    align-items: flex-end;
+    padding-right: 25px;
+}
+
+.chatting-answer__me h5{
+background-color: yellow;
+padding: 8px 8px;
+border-radius: 15px;
+border-top-right-radius: 0;
+}
+
+.chatting-answer__me span{
+   font-size: 12px;
+   margin-right: 3px;
+   opacity: 0.8;
+}
+
+
+.chatting-enter__space{
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    box-sizing: border-box;
+    bottom: 0;
+    align-items: center;
+    padding: 5px 10px;
+    background-color: white;
+    transition: all 0.3 ease-in-out;
+    }
+    
+    
+    
+    
+    .chatting-enter__input{
+        width: 90%;
+        margin-right: 30px;
+        position: relative;
+    }
+    
+    .chatting-enter__input input{
+        width: 100%;
+        height: 30%;
+        padding:15px 10px;
+        border-radius: 15px;
+        transition: all 0.3s ease-in-out;
+        border-width: 0.5px;
+        
+    }
+    
+    
+    
+    .fa-smile {
+    position: absolute;
+    top: 8px;
+    right: 25px;
+    
+
+    
+    
+    
+        
+    }
+    
+    
+    
+    #button{
+        position: absolute;
+        top: 8px;
+        right: -20px;
+        border-radius: 15px;
+        background-color: rgb(7, 153, 7);
+        border: none;
+        
+    }
+    
+    #button i{
+       opacity: 0.7;
+       
+    }
+    
+    
+    
+    #add-icon{
+        margin-left: 15px;
+        width: 10%;
+    }
+
+
+@keyframes backicon{
+    0%{
+        opacity: 1;
+    }
+
+     100%{
+        opacity: 0;
+     }
+}
+
+    
+    .chatting-enter:focus-within .chatting-enter__space:first-child i{
+        animation: backicon 1s ease-in-out;
+        
+    }
+    
+    .chatting-enter:focus-within .fa-smile{
+        animation: backicon 1s ease-in-out;
+    }
+    
+    .chatting-enter:focus-within  button{
+        animation: backicon 1s ease-in-out;
+    }
+    
+    
+    .chatting-enter:focus-within input{
+        padding-right: 110px;
+        
+        transform: translateX(-10%) translateY(-80px);
+        
+        
+    }
+    
+    
+    
+    .chatting-enter__space:focus-within{
+        transform: translateY(80px);
+    }
+
+
+    @keyframes flymessages{
+        from{
+            transform: translateX(-400px);
+        }
+        to{
+            transform: none;
+        }
+    }
+    
+    .chatting-content img,
+    .chatting-content .chatting-content__name{
+   animation: flymessages 0.5s ease-in-out forwards;
+    }
+
+    
+    
+    @keyframes appearmessage{
+        from{
+           opacity: 0;
+        }
+        to{
+            opacity: 1;
+        }
+    }
+    
+   .content1 {
+   opacity: 0;
+   animation: appearmessage 1s ease-in-out forwards;
+   animation-delay: 2s;
+    }
+
+    .content2{
+        opacity: 0;
+        animation: appearmessage 1s ease-in-out forwards;
+        animation-delay: 3s;
+    }
+
+    .content3,.content4{
+        opacity: 0;
+        animation: appearmessage 1s ease-in-out forwards;
+        animation-delay: 4s;
+    }
